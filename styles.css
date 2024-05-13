@@ -101,5 +101,7 @@ a:hover{
 @media screen and (max-width: 768px) {
     body {
         background-image: url('images/giphy.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
