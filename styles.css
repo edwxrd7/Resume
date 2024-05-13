@@ -11,9 +11,10 @@ body{
     gap:20px;
     max-width: 700px;
     margin: auto;
+    text-align: center;
 }
 .jobs{
-    border:1px solid red;
+    border:1px solid blue;
     width: 300px;
     margin: auto;
 }
@@ -21,12 +22,7 @@ body{
     background-color: rgba(206, 154, 255, 0.124);
     border-radius: 10px;
 }
-.active{
-    display: block;
-}
-.job-desc{
 
-}
 .hide{
     display: none;
 }
