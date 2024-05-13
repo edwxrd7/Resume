@@ -1,8 +1,8 @@
 body {
-    background-attachment: fixed;
     background-color: rgb(52, 29, 76);
     background-image: url(images/styles.gif);
     background-size:cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     color: rgb(238, 229, 216);
     font-family: "Raleway", sans-serif;
@@ -98,7 +98,7 @@ a {
 a{
     animation: pulsate 2.0s infinite alternate;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     body {
         background-image: url('images/IrF-ezgif.com-resize.webp');
         background-size: cover;
