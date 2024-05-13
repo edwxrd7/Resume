@@ -109,10 +109,12 @@ a:hover{
         border-radius: 10px;
         margin: auto;
         width: 300px;
+        border-style:dotted;
     }
     .bottom {
         background-color: rgba(154, 219, 251, 0.258);
         border-radius: 10px;
+        border-style:ridge;
         margin: auto;
         height: 120px;
         width: 300px;
