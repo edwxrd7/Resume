@@ -49,7 +49,6 @@ h1 {
 }
 
 .about-me {
-    border: 3px groove rgb(255, 89, 117);
     border-radius: 10px;
     width: 100%;
     max-width: 500px;
@@ -98,4 +97,9 @@ a {
 }
 a:hover{
     animation: pulsate 1.0s infinite alternate;
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url('images/giphy.gif');
+    }
 }
