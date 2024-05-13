@@ -100,8 +100,9 @@ a{
 }
 @media screen and (max-width: 768px) {
     body {
-        background-image: url('images/IrF-ezgif.com-resize.gif');
+        background-image: url('images/IrF-ezgif.com-resize.webp');
         background-size: cover;
+        background-color: rgba(154, 219, 251, 0.258);
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
