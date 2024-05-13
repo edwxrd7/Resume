@@ -95,8 +95,8 @@ a {
             0 0 34px rgb(255, 89, 117);
     }
 }
-a:hover{
-    animation: pulsate 1.0s infinite alternate;
+a{
+    animation: pulsate 2.0s infinite alternate;
 }
 @media screen and (max-width: 768px) {
     body {
