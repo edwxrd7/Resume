@@ -1,4 +1,12 @@
 $('#cfa-job').on('click', () => {
-    console.log('Clicked #cfa-job'); // Check if this message appears in the console
-    $('#cfa').removeClass('hide');
-})
+    $('#cfa').toggle(600);
+});
+$('#ihop-job').on('click', () => {
+    $('#ihop').toggle(600);
+});
+$('#bob-job').on('click', () => {
+    $('#bob').toggle(600);
+});
+$('#kbbq-job').on('click', () => {
+    $('#kbbq').toggle(600);
+});
