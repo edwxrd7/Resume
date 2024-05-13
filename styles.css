@@ -2,7 +2,7 @@ body {
     background-attachment: fixed;
     background-color: rgb(52, 29, 76);
     background-image: url(images/styles.gif);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     color: rgb(238, 229, 216);
     font-family: "Raleway", sans-serif;
@@ -100,8 +100,22 @@ a:hover{
 }
 @media screen and (max-width: 768px) {
     body {
-        background-image: url('images/giphy.gif');
+        background-image: url('images/IrF.gif');
         background-size: cover;
         background-repeat: no-repeat;
+    }
+    .jobs {
+        background-color: rgba(154, 219, 251, 0.258);
+        border-radius: 10px;
+        margin: auto;
+        width: 300px;
+    }
+    .bottom {
+        background-color: rgba(154, 219, 251, 0.258);
+        border-radius: 10px;
+        margin: auto;
+        height: 120px;
+        width: 300px;
+        text-align: center;
     }
 }
