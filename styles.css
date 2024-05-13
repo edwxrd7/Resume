@@ -103,6 +103,7 @@ a:hover{
         background-image: url('images/IrF.gif');
         background-size: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     .jobs {
         background-color: rgba(154, 219, 251, 0.258);
