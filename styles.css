@@ -100,8 +100,9 @@ a{
 }
 @media screen and (max-width: 768px) {
     body {
-        background-image: url('images/IrF.gif');
+        background-image: url('images/IrF-ezgif.com-resize.gif');
         background-size: cover;
+        background-repeat: no-repeat;
         background-attachment: fixed;
     }
     .jobs {
