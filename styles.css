@@ -1,15 +1,15 @@
 body {
-    background-color: rgb(52, 29, 76);
-    background-image: url(images/space.gif);
-    background-size:cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-color: #000000;
     color: rgb(238, 229, 216);
     font-family: "Raleway", sans-serif;
 }
 
 main {
-    background-color: rgba(206, 154, 255, 0.124);
+    background-color: #968773;
+    background-image: url('images/IrF-ezgif.com-resize.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     border-radius: 10px;
     height:max-content;
 }
@@ -31,7 +31,7 @@ h1 {
 }
 
 .jobs {
-    background-color: rgba(251, 154, 223, 0.258);
+    background-color: rgba(212, 105, 105, 0.528);
     border-radius: 10px;
     margin: auto;
     width: 300px;
@@ -98,7 +98,7 @@ a {
 a{
     animation: pulsate 2.0s infinite alternate;
 }
-@media screen and (max-width: 650px) {
+@media screen and (none) {
     body {
         margin: 0;
         padding: 10px;
