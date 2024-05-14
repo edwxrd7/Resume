@@ -100,10 +100,23 @@ a{
 }
 @media screen and (max-width: 850px) {
     body {
-        background-image: url('images/IrF-ezgif.com-resize.webp');
+        margin: 0;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+        position: relative;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: url('images/IrF-ezgif.com-resize.webp') no-repeat center center;
         background-size: cover;
-        background-color: rgb(105, 147, 167);
-    }
+      }
     .jobs {
         background-color: rgba(154, 219, 251, 0.258);
         border-radius: 10px;
