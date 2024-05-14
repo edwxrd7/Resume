@@ -115,6 +115,8 @@ a{
         height: 100%;
         z-index: -1;
         background: url('images/IrF-ezgif.com-resize.webp') no-repeat center center;
+        background-size: cover;
+        background-color: black;
       }
     .jobs {
         background-color: rgba(154, 219, 251, 0.258);
