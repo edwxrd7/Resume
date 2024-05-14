@@ -1,6 +1,6 @@
 body {
     background-color: rgb(52, 29, 76);
-    background-image: url(images/styles.gif);
+    background-image: url(images/space.gif);
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -103,9 +103,6 @@ a{
         background-image: url('images/IrF-ezgif.com-resize.webp');
         background-size: cover;
         background-color: rgb(105, 147, 167);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
     }
     .jobs {
         background-color: rgba(154, 219, 251, 0.258);
