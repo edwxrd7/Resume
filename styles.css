@@ -98,7 +98,7 @@ a {
 a{
     animation: pulsate 2.0s infinite alternate;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 650px) {
     body {
         margin: 0;
         padding: 10px;
@@ -115,7 +115,6 @@ a{
         height: 100%;
         z-index: -1;
         background: url('images/IrF-ezgif.com-resize.webp') no-repeat center center;
-        background-size: cover;
       }
     .jobs {
         background-color: rgba(154, 219, 251, 0.258);
