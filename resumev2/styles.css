@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(23, 20, 20);
+}
+
+.glowing-borders {
+    position: relative;
+    padding: 20px;
+    height:500px;
+    border: 2px solid transparent; /* Initial border, can be removed if not needed */
+}
+
+.glowing-borders::before,
+.glowing-borders::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Adjust the width of the glow */
+    background: rgb(212, 131, 255);
+    animation: glow 2s infinite;
+}
+
+.glowing-borders::before {
+    left: -6px; /* Adjust this value based on the width of the glow */
+}
+
+.glowing-borders::after {
+    right: -6px; /* Adjust this value based on the width of the glow */
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgb(212, 131, 255), 0 0 20px rgb(212, 131, 255), 0 0 30px rgb(212, 131, 255);
+    }
+    25% {
+        box-shadow: 0 0 20px rgb(212, 131, 255), 0 0 30px rgb(212, 131, 255), 0 0 40px rgb(212, 131, 255);
+    }
+    50% {
+        box-shadow: 0 0 10px rgb(212, 131, 255), 0 0 20px rgb(212, 131, 255), 0 0 30px rgb(212, 131, 255);
+    }
+    75% {
+        box-shadow: 0 0 5px rgb(212, 131, 255), 0 0 10px rgb(212, 131, 255), 0 0 15px rgb(212, 131, 255);
+    }
+    100% {
+        box-shadow: 0 0 10px rgb(212, 131, 255), 0 0 20px rgb(212, 131, 255), 0 0 30px rgb(212, 131, 255);
+    }
+}
+
