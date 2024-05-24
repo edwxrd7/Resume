@@ -1,14 +1,32 @@
 body{
     background-color: rgb(23, 20, 20);
 }
-
-.glowing-borders {
-    position: relative;
-    padding: 20px;
-    height:500px;
-    border: 2px solid transparent; /* Initial border, can be removed if not needed */
+.tab-bar {
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.tab-bar a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    flex-grow: 1;
+}
+.tab-bar a .icon {
+    display: block;
 }
 
+/*Changes the borde color for each page, could not figure 
+out a simple solution to do it via JS*/
+.glowing-borders {
+    position: relative;
+    border: 2px solid transparent; /* Initial border, can be removed if not needed */
+}
 .glowing-borders::before,
 .glowing-borders::after {
     content: '';
@@ -17,17 +35,64 @@ body{
     bottom: 0;
     width: 2px; /* Adjust the width of the glow */
     background: rgb(212, 131, 255);
+    transition: background-color 1s; /* Smooth transition */
+
     animation: glow 2s infinite;
 }
-
 .glowing-borders::before {
     left: -6px; /* Adjust this value based on the width of the glow */
 }
-
 .glowing-borders::after {
     right: -6px; /* Adjust this value based on the width of the glow */
 }
+/*break*/
+.glowing-borders-v2 {
+    position: relative;
+    border: 2px solid transparent; /* Initial border, can be removed if not needed */
+}
+.glowing-borders-v2::before,
+.glowing-borders-v2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Adjust the width of the glow */
+    background: rgb(53, 228, 251);
+    transition: background-color 1s; /* Smooth transition */
 
+    animation: glow-v2 2s infinite;
+}
+.glowing-borders-v2::before {
+    left: -6px; /* Adjust this value based on the width of the glow */
+}
+.glowing-borders-v2::after {
+    right: -6px; /* Adjust this value based on the width of the glow */
+}
+/*break*/
+.glowing-borders-v3 {
+    position: relative;
+    padding: 20px;
+    height:500px;
+    border: 2px solid transparent; /* Initial border, can be removed if not needed */
+}
+.glowing-borders-v3::before,
+.glowing-borders-v3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Adjust the width of the glow */
+    background: rgb(53, 251, 122);
+    transition: background-color 1s; /* Smooth transition */
+
+    animation: glow-v3 2s infinite;
+}
+.glowing-borders-v3::before {
+    left: -6px; /* Adjust this value based on the width of the glow */
+}
+.glowing-borders-v3::after {
+    right: -6px; /* Adjust this value based on the width of the glow */
+}
 @keyframes glow {
     0% {
         box-shadow: 0 0 10px rgb(212, 131, 255), 0 0 20px rgb(212, 131, 255), 0 0 30px rgb(212, 131, 255);
@@ -45,4 +110,77 @@ body{
         box-shadow: 0 0 10px rgb(212, 131, 255), 0 0 20px rgb(212, 131, 255), 0 0 30px rgb(212, 131, 255);
     }
 }
+@keyframes glow-v2 {
+    0% {
+        box-shadow: 0 0 10px rgb(131, 243, 255), 0 0 20px rgb(131, 243, 255), 0 0 30px rgb(131, 243, 255);
+    }
+    25% {
+        box-shadow: 0 0 20px rgb(131, 243, 255), 0 0 30px rgb(131, 243, 255), 0 0 40px rgb(131, 243, 255);
+    }
+    50% {
+        box-shadow: 0 0 10px rgb(131, 243, 255), 0 0 20px rgb(131, 243, 255), 0 0 30px rgb(131, 243, 255);
+    }
+    75% {
+        box-shadow: 0 0 5px rgb(131, 243, 255), 0 0 10px rgb(131, 243, 255), 0 0 15px rgb(131, 243, 255);
+    }
+    100% {
+        box-shadow: 0 0 10px rgb(131, 243, 255), 0 0 20px rgb(131, 243, 255), 0 0 30px rgb(131, 243, 255);
+    }
+}
+@keyframes glow-v3 {
+    0% {
+        box-shadow: 0 0 10px rgb(131, 255, 162), 0 0 20px rgb(131, 255, 162), 0 0 30px rgb(131, 255, 162);
+    }
+    25% {
+        box-shadow: 0 0 20px rgb(131, 255, 162), 0 0 30px rgb(131, 255, 162), 0 0 40px rgb(131, 255, 162);
+    }
+    50% {
+        box-shadow: 0 0 10px rgb(131, 255, 162), 0 0 20px rgb(131, 255, 162), 0 0 30px rgb(131, 255, 162);
+    }
+    75% {
+        box-shadow: 0 0 5px rgb(131, 255, 162), 0 0 10px rgb(131, 255, 162), 0 0 15px rgb(131, 255, 162);
+    }
+    100% {
+        box-shadow: 0 0 10px rgb(131, 255, 162), 0 0 20px rgb(131, 255, 162), 0 0 30px rgb(131, 255, 162);
+    }
+}
 
+
+
+ul{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    justify-content: center;
+    list-style: none;
+    gap:20px;
+    font-size: 30px;
+}
+nav{
+    text-align: center;
+    margin: auto;
+}
+a{
+    color: antiquewhite;
+}
+
+/*Section hide and show*/
+section {
+    margin-top: 210px;
+    background-color: #493c48e1;
+    display: none;
+    /* Hide all sections by default */
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  section.active {
+    display: block;
+    /* Display active section */
+  }
+  
+  .hide {
+    display: none;
+  }

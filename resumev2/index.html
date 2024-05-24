@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume V2</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="glowing-borders">
+
+<body class="glowing-borders" id="glow">
+    <nav id="navMenu" class="">
+        <ul>
+            <li><a class="link" href="#me">Home</a></li>
+            <li><a class="link" href="#jobs">Jobs</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <div class=""></div>
+        <section class="active" id="me"></section>
+        <section class="hide" id="jobs"><h1>Hey</h1></section>
     </main>
-    
+    <div class="tab-bar">
+        <a href="#me"><span class="icon">🏠</span><span>Me</span></a>
+        <a href="#jobs"><span class="icon">ℹ️</span><span>Jobs</span></a>
+     </div>
+
+    <script src="resumev2.js"></script>
+
 </body>
+
 </html>

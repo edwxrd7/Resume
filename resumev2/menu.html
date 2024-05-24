@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Bar Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-bottom: 50px; /* Reserve space for the tab bar */
+        }
+        .tab-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        .tab-bar a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .tab-bar a .icon {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-bar">
+        <a href="#home"><span class="icon">🏠</span><span>Home</span></a>
+        <a href="#about"><span class="icon">ℹ️</span><span>About</span></a>
+        <a href="#services"><span class="icon">🛠️</span><span>Services</span></a>
+        <a href="#contact"><span class="icon">📞</span><span>Contact</span></a>
+    </div>
+</body>
+</html>

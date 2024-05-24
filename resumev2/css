@@ -1,0 +1,40 @@
+// JavaScript to change color on link click
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function (event) {
+        const targetUrl = this.getAttribute('href');
+        console.log(targetUrl);
+        const sColor = shadowColor[targetUrl];
+        const bColor = borderColor[targetUrl];
+
+        if (sColor) {
+            // Change the color of the element
+            document.getElementsByClassName('glowing-borders-v3').style = 'animation: glow-v3 2s infinite';
+            document.getElementById('glow').style.animation = sColor;
+            document.getElementById('glow').style.breakAfter = bColor;
+        }
+
+    });
+});
+
+.glowing-borders-v3 {
+    position: relative;
+    padding: 20px;
+    height:500px;
+    border: 2px solid transparent; /* Initial border, can be removed if not needed */
+}
+.glowing-borders-v3::before,
+.glowing-borders-v3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Adjust the width of the glow */
+    background: rgb(53, 251, 122);
+    animation: glow-v3 2s infinite;
+}
+.glowing-borders-v3::before {
+    left: -6px; /* Adjust this value based on the width of the glow */
+}
+.glowing-borders-v3::after {
+    right: -6px; /* Adjust this value based on the width of the glow */
+}
